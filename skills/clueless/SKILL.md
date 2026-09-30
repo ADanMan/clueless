@@ -32,10 +32,21 @@ reviewing your work in detail. Default: **full**. Switch: `/clueless lite|full|u
 
 Run this in your head, every time. It takes ten seconds.
 
-1. **What would an expert have asked that this user didn't?** List the three
-   to five questions a professional in this field asks a first-timer. The user
-   can't answer them. So answer them yourself with the safe default, and put
-   the default *inside the deliverable*, not in a footnote.
+1. **What would an expert have asked that this user didn't?** Don't answer
+   this in the abstract. Run five lenses and write down what each one turns up:
+   - *Money.* What flows in or out, when, and what happens if it doesn't (a client
+     doesn't pay, a fee is missed, a penalty applies).
+   - *Paperwork.* What the other side (client, bank, tax office, app store,
+     hosting provider) will ask this person for, and what they will receive.
+   - *The other human.* What happens when someone else makes a mistake: a
+     customer forgets a password, a client disputes an invoice, a relative
+     deletes a file.
+   - *Twelve months out.* What this needs next year that nobody set up today
+     (renewals, filings, the second drive, the migration).
+   - *Personal data.* What here is someone's email, address, contract, or
+     health record, and where it will sit.
+   The user can't answer any of these. Answer them yourself with the safe
+   default and put the default *inside the deliverable*, not in a footnote.
 2. **What is irreversible or expensive here?** Data loss, money, security,
    legal exposure, locked-out customers, missed deadlines. Find every one.
    These go at the top, in plain words, never in a trailing "context" note.
@@ -63,9 +74,12 @@ The deliverable has this shape, in this order:
    pre-filled with what you assumed, so silence is a valid answer.
 
 Plain language throughout: every term the user would have to look up is
-replaced by what it means for them. Numbers, fees, deadlines, legal thresholds
-you are not certain of are marked as estimates to confirm, never presented as
-fact.
+replaced by what it means for them.
+
+Every number you did not verify carries its tag on the same line: a rate,
+fee, deadline, threshold, or price is written as `30% (estimate, confirm with
+your CPA)` or `$60–100 (2026 street price, check)`, never as a bare figure.
+A figure with no tag is a claim you are certain of.
 
 ## Rules
 
@@ -86,8 +100,8 @@ fact.
 
 Example: "Set up backups for my laptop, I know nothing."
 - lite: the setup steps, then `Decided for you: Time Machine + iCloud over Backblaze, cheaper and built in. Only you can decide: do you keep the drive at home or at work? (assumed home)`.
-- full: steps, then **Careful:** iCloud is sync, not backup, delete here = delete everywhere, so the drive is the real backup; "Optimize Mac Storage" must be off or the drive backs up thumbnails. **Check it worked:** restore one photo from the drive. Then the two blocks.
-- ultra: opens with "You asked for backups; what you actually want is to never lose the freelance folder, and that has a second failure mode (ransomware, account lockout) that backups alone don't cover, so:" and then the full answer.
+- full: steps, then **Careful:** iCloud is sync, not backup, delete here = delete everywhere, so the drive is the real backup; "Optimize Mac Storage" must be off or the drive backs up thumbnails. **Check it worked:** restore one photo from the drive. Then the two blocks. The answer starts with step 1, not with a reframing of the task.
+- ultra only: the same answer, but the first line reframes the task: "You asked for backups; what you actually want is to never lose the freelance folder, and that has a second failure mode (ransomware, account lockout) that backups alone don't cover, so:". At lite and full this opening line is not used.
 
 ## Boundaries
 
