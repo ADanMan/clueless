@@ -2,7 +2,7 @@
 
 Three "I know nothing, do it for me" prompts ([prompts.json](prompts.json)), three runs per prompt per arm, same model (Claude Sonnet, fresh subagent, no tools), with and without the `clueless` skill loaded as system-level instructions. Every answer is saved verbatim in [runs/](runs/) and graded by a separate Sonnet instance against a fixed checklist ([checklists.json](checklists.json)) using the rules in [judge-prompt.md](judge-prompt.md): PASS only if stated clearly and actionably, BURIED if present but as a trailing note or aside, FAIL if absent. Grades are in [scores.json](scores.json); `python3 summarize.py` rebuilds the tables.
 
-Latest result: [results/2026-10-01-n3-baseline-vs-clueless.md](results/2026-10-01-n3-baseline-vs-clueless.md). The earlier n=1 hand-scored pass is kept in [results/2026-09-30-baseline-vs-clueless.md](results/2026-09-30-baseline-vs-clueless.md).
+Latest result: [results/2026-10-01-n3-baseline-vs-clueless.md](results/2026-10-01-n3-baseline-vs-clueless.md) (v1.0 vs baseline) and [results/2026-10-01-v1.1-lenses.md](results/2026-10-01-v1.1-lenses.md) (v1.1 vs v1.0, same total). The earlier n=1 hand-scored pass is kept in [results/2026-09-30-baseline-vs-clueless.md](results/2026-09-30-baseline-vs-clueless.md).
 
 ## Caveats, honestly
 
