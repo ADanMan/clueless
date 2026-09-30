@@ -87,7 +87,7 @@ Three "I know nothing, do it for me" prompts (home backups, first-year freelance
 
 n=3 per prompt per arm, one model, graded by a separate model against a fixed checklist. Small, but the runs agree with each other. What it still misses every time: password reset for the course site, W-9/1099 paperwork, the first-year tax safe-harbor rule. Full method, checklists, all 18 verbatim answers and the grades: [benchmarks/](benchmarks/).
 
-The baseline answers were competent. What they lacked was the shape: caveats at the bottom, decisions unnamed, no way to verify. Method, checklists and verbatim answers: [benchmarks/](benchmarks/).
+The baseline answers were competent. What they lacked was the shape: caveats at the bottom, decisions unnamed, no way to verify.
 
 ## Install
 
