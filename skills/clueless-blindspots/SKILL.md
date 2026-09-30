@@ -7,6 +7,7 @@ description: >
   don't I know", "poke holes in this", "what would an expert ask", "что я
   упускаю", "что я не вижу", or /clueless-blindspots. One-shot review; does not
   change the always-on level.
+license: MIT
 ---
 
 Review the thing in front of you as the expert the user doesn't have. Find
