@@ -1,0 +1,164 @@
+{
+ "backups-baseline-2": [
+  "FAIL",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "PASS"
+ ],
+ "backups-baseline-3": [
+  "FAIL",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "PASS"
+ ],
+ "backups-clueless-1": [
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "backups-clueless-2": [
+  "PASS",
+  "PASS",
+  "PASS",
+  "FAIL",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "backups-clueless-3": [
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS",
+  "BURIED",
+  "PASS",
+  "PASS"
+ ],
+ "taxes-clueless-1": [
+  "PASS",
+  "FAIL",
+  "FAIL",
+  "FAIL",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "taxes-clueless-2": [
+  "PASS",
+  "FAIL",
+  "FAIL",
+  "FAIL",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "taxes-clueless-3": [
+  "PASS",
+  "FAIL",
+  "FAIL",
+  "PASS",
+  "BURIED",
+  "PASS",
+  "PASS"
+ ],
+ "signup-baseline-1": [
+  "FAIL",
+  "FAIL",
+  "FAIL",
+  "BURIED",
+  "FAIL",
+  "FAIL",
+  "FAIL"
+ ],
+ "signup-baseline-2": [
+  "FAIL",
+  "FAIL",
+  "FAIL",
+  "BURIED",
+  "BURIED",
+  "FAIL",
+  "FAIL"
+ ],
+ "signup-baseline-3": [
+  "FAIL",
+  "BURIED",
+  "BURIED",
+  "FAIL",
+  "BURIED",
+  "FAIL",
+  "FAIL"
+ ],
+ "signup-clueless-1": [
+  "PASS",
+  "BURIED",
+  "PASS",
+  "BURIED",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "signup-clueless-2": [
+  "PASS",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "signup-clueless-3": [
+  "PASS",
+  "FAIL",
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS",
+  "PASS"
+ ],
+ "backups-baseline-1": [
+  "FAIL",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "FAIL"
+ ],
+ "taxes-baseline-1": [
+  "PASS",
+  "FAIL",
+  "BURIED",
+  "FAIL",
+  "PASS",
+  "BURIED",
+  "FAIL"
+ ],
+ "taxes-baseline-2": [
+  "FAIL",
+  "PASS",
+  "BURIED",
+  "FAIL",
+  "BURIED",
+  "FAIL",
+  "FAIL"
+ ],
+ "taxes-baseline-3": [
+  "BURIED",
+  "FAIL",
+  "PASS",
+  "FAIL",
+  "BURIED",
+  "BURIED",
+  "FAIL"
+ ]
+}
