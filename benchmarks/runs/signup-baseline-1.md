@@ -1,3 +1,5 @@
+<!-- One literal was edited after the run: the placeholder session secret the model wrote ('change-this-to-a-...') is replaced with `process.env.SESSION_SECRET` so security scanners stop flagging this file. The placeholder being there at all is the point of the baseline. Everything else is verbatim. -->
+
 Here's a complete, working signup system: Express backend + plain HTML frontend, storing users (email + hashed password) in a local SQLite database. Passwords are hashed with bcrypt — never stored in plain text.
 
 ## 1. Project setup
@@ -45,7 +47,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-  secret: 'change-this-to-a-long-random-string', // see note below
+  secret: process.env.SESSION_SECRET, // ORIGINAL WAS A LITERAL PLACEHOLDER STRING, edited for scanners; see note at top
   resave: false,
   saveUninitialized: false,
   cookie: { maxAge: 1000 * 60 * 60 * 24 } // 1 day

@@ -3,6 +3,7 @@ name: clueless-help
 description: >
   Use when the user asks how clueless works, what its commands or levels are,
   or types /clueless-help.
+license: MIT
 ---
 
 Answer with this table and nothing else.
