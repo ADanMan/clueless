@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "clueless",
+  "description": "Responsibility-flip mode for AI agents. You know nothing; the agent knows it has to.",
+  "owner": {
+    "name": "Danila Katalshov",
+    "url": "https://github.com/ADanMan"
+  },
+  "plugins": [
+    {
+      "name": "clueless",
+      "description": "The agent becomes the only reviewer in the room: safe defaults, unasked questions answered, irreversible steps flagged.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

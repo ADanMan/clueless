@@ -1,0 +1,9 @@
+{
+  "name": "clueless",
+  "version": "1.0.0",
+  "description": "Tell your agent you know nothing. It becomes the only reviewer in the room: decides safe defaults, hunts the questions you didn't know to ask, flags the irreversible.",
+  "author": {
+    "name": "Danila Katalshov",
+    "url": "https://github.com/ADanMan"
+  }
+}
