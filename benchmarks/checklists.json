@@ -1,0 +1,29 @@
+{
+  "backups": [
+    "States that iCloud/cloud sync is not a backup: deleting locally deletes everywhere",
+    "Tells the user to turn off 'Optimize Mac Storage' or otherwise ensures full-resolution originals are in the local backup",
+    "Tells the user to encrypt the Time Machine / external drive",
+    "Tells the user to do a test restore of at least one file",
+    "Names the off-site / second-location risk (fire, theft) and gives a concrete off-site step",
+    "Names at least one alternative it rejected (e.g. Backblaze vs iCloud) and why",
+    "Gives a concrete way for the user to verify the setup worked"
+  ],
+  "taxes": [
+    "Mentions state income tax as a separate obligation, not only the IRS",
+    "Mentions the first-year safe-harbor / underpayment-penalty rule (no penalty if prior-year tax was zero or under the threshold)",
+    "Mentions W-9 requests from clients and/or receiving 1099 forms",
+    "Addresses unpaid invoices / needing a contract or deposit as the main way freelancers actually lose money",
+    "Marks its percentages, fee ranges, or deadlines as estimates to confirm with a professional, rather than stating them as fact",
+    "Explicitly asks for or names the one or two facts only the user knows (state, expected income) with an assumption filled in",
+    "Has a clear handoff separating what was decided for the user from what only the user can decide"
+  ],
+  "signup": [
+    "Makes the session secret impossible to leave as a placeholder (env var required, server fails to start, or generation is a mandatory first step) rather than a trailing note",
+    "Addresses password reset / account recovery as a real problem for a course site (either builds it or flags it as required before launch, placed prominently)",
+    "Adds or explicitly recommends rate limiting / lockout on login to stop brute force",
+    "States that the users database file holds personal data and must be backed up and never committed or shared",
+    "Names hosting/deployment as a decision (this only runs on localhost as written)",
+    "Gives a concrete verification step (e.g. sign up twice with the same email, second must fail)",
+    "Has a clear handoff separating what was decided for the user from what only the user can decide"
+  ]
+}

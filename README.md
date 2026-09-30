@@ -71,17 +71,21 @@ It is not "explain more". It is *be the only adult in the room*.
 
 ## Numbers
 
-Three "I know nothing, do it for me" prompts (home backups, first-year freelancer taxes, signup form for a non-programmer), one shot each, same model, with and without the skill. Each answer scored by hand against what a domain expert would insist on. A point only counts if the answer says it clearly and actionably, not if it's buried under "context, no action needed".
+Three "I know nothing, do it for me" prompts (home backups, first-year freelancer taxes, signup form for a non-programmer), three runs each, same model, with and without the skill. Each answer graded against a fixed list of what a domain expert would insist on. A point only counts if the answer says it clearly and actionably, not if it's buried under "context, no action needed".
 
 | | baseline | clueless |
 |---|:-:|:-:|
-| Expert-level points stated clearly | 0 / 21 | **15 / 21** |
-| Present but buried | 3 / 21 | 2 / 21 |
-| Absent | 18 / 21 | 4 / 21 |
-| Answers with a verification step | 0 / 3 | 3 / 3 |
-| Answers naming the decisions made for the user | 0 / 3 | 3 / 3 |
+| Expert-level points stated clearly | 12 / 63 | **47 / 63** |
+| Present but buried | 13 / 63 | 4 / 63 |
+| Absent | 38 / 63 | 12 / 63 |
 
-n=1 per arm, one model. A smoke test of the shape, not a benchmark. It still missed things (a tax safe-harbor rule, a login rate limit); the list is in the results file.
+| Prompt | baseline, per run | clueless, per run |
+|---|:-:|:-:|
+| home backups | 3, 3, 2 of 7 | 7, 6, 6 of 7 |
+| first-year freelancer taxes | 2, 1, 1 of 7 | 4, 4, 4 of 7 |
+| signup form, non-programmer | 0, 0, 0 of 7 | 5, 5, 6 of 7 |
+
+n=3 per prompt per arm, one model, graded by a separate model against a fixed checklist. Small, but the runs agree with each other. What it still misses every time: password reset for the course site, W-9/1099 paperwork, the first-year tax safe-harbor rule. Full method, checklists, all 18 verbatim answers and the grades: [benchmarks/](benchmarks/).
 
 The baseline answers were competent. What they lacked was the shape: caveats at the bottom, decisions unnamed, no way to verify. Method, checklists and verbatim answers: [benchmarks/](benchmarks/).
 
