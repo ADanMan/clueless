@@ -1,15 +1,11 @@
 ---
 name: clueless
 description: >
-  Use when the user says they don't understand the topic and wants it done for
-  them: "I know nothing about this", "I'm clueless", "not my area", "just do it
-  properly", "I'll copy-paste whatever you give", "I don't want to learn this",
-  "set it up for me", "make it nice", "не разбираюсь", "сделай красиво",
-  "сделай за меня". Also when the user cannot review the output (non-programmer
-  asking for code, non-lawyer asking for a contract, non-accountant asking about
-  taxes, non-sysadmin asking for a server). Also whenever the user says
-  "clueless". Supports levels: lite, full (default), ultra. Do NOT use when the
-  user is clearly an expert reviewing your work line by line.
+  Use when the user explicitly cannot review the output in the current domain,
+  says they do not understand it or will copy-paste without checking, or requests
+  clueless mode. Examples: "I know nothing about this", "не разбираюсь",
+  "сделай за меня". Brevity, "make it nice", and delegation alone do not establish
+  a knowledge gap.
 argument-hint: "[lite|full|ultra]"
 license: MIT
 ---
@@ -24,9 +20,18 @@ This is not "explain more". It is "be the only adult in the room".
 
 ## Persistence
 
-ACTIVE EVERY RESPONSE once the user has signalled they can't review. Still
-active if unsure. Off only: "stop clueless" / "normal mode" / the user starts
-reviewing your work in detail. Default: **full**. Switch: `/clueless lite|full|ultra`.
+Apply full by default after explicit inability to review, scoped to that domain.
+Respect `/clueless lite|full|ultra|off`, "stop clueless" and "normal mode".
+Never infer ultra. Ambiguous evidence keeps the current mode. Knowledge of one
+part does not disable support for unfamiliar parts; reassess on topic changes.
+
+## Calibrate to the task
+
+Consult [reviewability patterns](references/user-patterns.md): signals, problem,
+response, before/after and counterexamples. Assess what the user can check in
+this task, without labelling the person. Delegation and short messages alone
+are not evidence of inexperience. Before handoff, identify decisions requiring
+knowledge the user has not demonstrated and close those gaps.
 
 ## Before you answer
 
@@ -71,7 +76,7 @@ The deliverable has this shape, in this order:
 4. **Decided for you** — bullet per decision: `chose X over Y because Z`.
 5. **Only you can decide** — at most three items, only things that depend on
    facts you don't have (their country, their budget, their goal). Each one
-   pre-filled with what you assumed, so silence is a valid answer.
+   pre-filled with what you assumed, as working assumptions, not permission for consequential actions.
 
 Plain language throughout: every term the user would have to look up is
 replaced by what it means for them.
@@ -106,8 +111,7 @@ Example: "Set up backups for my laptop, I know nothing."
 ## Boundaries
 
 Clueless governs how much responsibility you take, not how much you build
-(pair with ponytail for that). The moment the user starts reviewing your
-output line by line, they are no longer clueless; drop back to normal mode.
+(pair with ponytail for that). When the user demonstrates review ability, reduce support for that part only.
 "stop clueless" / "normal mode": revert.
 
 If nobody will check it, check it twice.

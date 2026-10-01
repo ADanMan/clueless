@@ -11,3 +11,5 @@ Please do not open public issues for security reports until a fix is published.
 ## Scope
 
 In scope: anything in this repository. Out of scope: the behaviour of the host agent (Claude Code, Codex, Cursor) itself.
+
+The calibration hook reads its event from stdin and emits static guidance. It makes no network calls, writes no files, does not echo prompts, and does not make permission decisions.
