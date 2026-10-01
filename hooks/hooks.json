@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{
+      "hooks": [{"type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/calibrate.cjs\"", "timeout": 5}]
+    }]
+  }
+}

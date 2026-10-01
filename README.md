@@ -152,6 +152,23 @@ Then don't say you're clueless. The skill also backs off on its own the moment y
 **Why "clueless"?**
 Because that's what you typed, and it worked.
 
+## Calibration hook
+
+Claude Code loads the bundled `UserPromptSubmit` hook automatically. It asks the
+model to assess review ability for the current domain using the pattern catalog:
+explicit inability, delegated choices, mixed expertise, ambiguous wording,
+learning, and quoted/negated signals. It never selects a mode in code, stores
+prompts, calls another model, or grants permissions. Node.js is required for the
+hook; other adapters use the skill rules without the hook.
+
+Disable the reminder with `CLUELESS_CALIBRATION=off` in the environment before
+starting Claude Code. Explicit clueless off/level commands take priority even
+while the reminder runs. The hook's context uses additional tokens each turn.
+
+The existing benchmark numbers describe the earlier skill versions, not this
+calibration hook. Runtime tests cover its input/output and failure behaviour;
+classification accuracy and long-session benefits are not yet measured.
+
 ## Development
 
 ```bash
