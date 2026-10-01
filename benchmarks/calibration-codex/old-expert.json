@@ -1,0 +1,1 @@
+{"mode":"normal","scope":"Fix the Express session rotation race; code only.","reason":"The user identifies as the service maintainer and gives no indication they cannot review the code. Activation is unsupported.","handoff":"Provide only the code patch once the relevant session code is available."}
