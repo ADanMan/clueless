@@ -1,6 +1,6 @@
 {
   "name": "clueless",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Responsibility-flip mode for when the user cannot review the output: irreversible steps first, one verification step, every default named, at most three questions only the user can answer.",
   "author": {
     "name": "Danila Katalshov",
