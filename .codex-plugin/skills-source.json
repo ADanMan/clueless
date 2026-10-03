@@ -1,0 +1,11 @@
+{
+  "scope": "bundled-skills",
+  "repository": "https://github.com/ADanMan/clueless",
+  "commit": "338650f5324cd04607ab3e55fea32af56a3dbbbf",
+  "files": {
+    "skills/clueless-blindspots/SKILL.md": "549be42c82dc0d5a2fff314232767861508d1c920aac5be6a4194935a2dd8175",
+    "skills/clueless-help/SKILL.md": "83ab61f2abe2b3560d58f792a7fe076987f617cded7a7154648e70cd07aef0b1",
+    "skills/clueless/SKILL.md": "ab9bccf1b9a21fdaf48522ff0622ff1c7bea04fafbe064d58f92b028a3c13209",
+    "skills/clueless/references/user-patterns.md": "93a8463021e745d12c9a45735943b5a37a6992ce461c98672ada1b04ee6affae"
+  }
+}

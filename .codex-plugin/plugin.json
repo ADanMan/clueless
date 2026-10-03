@@ -40,5 +40,6 @@
     ],
     "brandColor": "#111111",
     "logo": "./assets/icon.svg"
-  }
+  },
+  "commit": "338650f5324cd04607ab3e55fea32af56a3dbbbf"
 }
