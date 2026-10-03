@@ -1,9 +1,10 @@
 ---
 name: clueless-help
-description: >
-  Use when the user asks how clueless works, what its commands or levels are,
-  or types /clueless-help.
+description: "Use when the user asks how clueless works, what its commands or levels are, or types /clueless-help."
 license: MIT
+metadata:
+  tags: "command-reference, reviewability, agent-skills"
+  languages: "en"
 ---
 
 Answer with this table and nothing else.

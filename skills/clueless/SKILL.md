@@ -1,13 +1,11 @@
 ---
 name: clueless
-description: >
-  Use when the user explicitly cannot review the output in the current domain,
-  says they do not understand it or will copy-paste without checking, or requests
-  clueless mode. Examples: "I know nothing about this", "не разбираюсь",
-  "сделай за меня". Brevity, "make it nice", and delegation alone do not establish
-  a knowledge gap.
+description: "Use when the user explicitly cannot review the output in the current domain, says they do not understand it or will copy-paste without checking, or requests clueless mode. Examples: \"I know nothing about this\", \"не разбираюсь\", \"сделай за меня\". Brevity, \"make it nice\", and delegation alone do not establish a knowledge gap."
 argument-hint: "[lite|full|ultra]"
 license: MIT
+metadata:
+  tags: "reviewability, safe-defaults, verification"
+  languages: "en"
 ---
 
 # Clueless

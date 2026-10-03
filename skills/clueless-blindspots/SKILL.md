@@ -1,13 +1,10 @@
 ---
 name: clueless-blindspots
-description: >
-  Use when the user asks what they are not seeing, what they forgot, what could
-  go wrong, or what an expert would say about a plan, decision, document, code
-  change, or setup they already have. Triggers: "what am I missing", "what
-  don't I know", "poke holes in this", "what would an expert ask", "что я
-  упускаю", "что я не вижу", or /clueless-blindspots. One-shot review; does not
-  change the always-on level.
+description: "Use when the user asks what they are not seeing, what they forgot, what could go wrong, or what an expert would say about a plan, decision, document, code change, or setup they already have. Triggers: \"what am I missing\", \"what don't I know\", \"poke holes in this\", \"what would an expert ask\", \"что я упускаю\", \"что я не вижу\", or /clueless-blindspots. One-shot review; does not change the always-on level."
 license: MIT
+metadata:
+  tags: "risk-review, decision-review, verification"
+  languages: "en"
 ---
 
 Review the thing in front of you as the expert the user doesn't have. Find
