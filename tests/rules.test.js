@@ -3,6 +3,7 @@ const assert = require('node:assert');
 const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const root = path.join(__dirname, '..');
 
 test('rule copies are in sync', () => {
@@ -21,6 +22,32 @@ test('plugin manifests agree on version', () => {
   const v = (f) => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8')).version;
   assert.strictEqual(v('.claude-plugin/plugin.json'), v('package.json'));
   assert.strictEqual(v('.codex-plugin/plugin.json'), v('package.json'));
+});
+
+test('bundled skills match their pinned source snapshot', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, '.codex-plugin/plugin.json'), 'utf8'));
+  const source = JSON.parse(fs.readFileSync(path.join(root, '.codex-plugin/skills-source.json'), 'utf8'));
+  assert.strictEqual(source.repository, manifest.repository);
+  assert.match(source.commit, /^[0-9a-f]{40}$/);
+  assert.strictEqual(source.commit, manifest.commit);
+  const files = [];
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
+      const file = `${dir}/${entry.name}`;
+      if (entry.isDirectory()) walk(file);
+      else {
+        assert.ok(entry.isFile(), `skill snapshot cannot contain a symlink: ${file}`);
+        files.push(file);
+      }
+    }
+  };
+  walk('skills');
+  assert.ok(files.length > 0);
+  assert.deepStrictEqual(Object.keys(source.files).sort(), files.sort(), 'source snapshot must cover every bundled skill file');
+  for (const file of files) {
+    const hash = createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
+    assert.strictEqual(hash, source.files[file], `refresh the source snapshot after changing ${file}`);
+  }
 });
 
 test('catalog screenshots resolve to bundled PNG previews', () => {
