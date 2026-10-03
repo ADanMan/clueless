@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Clueless — published signup example</title>
+<style>
+*{box-sizing:border-box} body{margin:0;background:#f2f1ed;color:#161616;font-family:Arial,Helvetica,sans-serif}
+main{padding:44px 52px;max-width:1600px;margin:auto} header{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #161616;padding-bottom:22px}
+h1{font-size:42px;margin:0;letter-spacing:-1.5px} .mark{background:#111;color:white;border-radius:12px;font-family:Georgia,serif;font-size:43px;line-height:62px;text-align:center;width:62px;margin-right:18px;display:inline-block;vertical-align:middle}
+.meta{font-size:17px;text-align:right;line-height:1.5;color:#555} blockquote{font-size:20px;line-height:1.5;margin:24px 0;padding:18px 24px;background:white;border-left:4px solid #111}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px} section{background:white;border:1px solid #deddd8;border-radius:12px;padding:22px 24px;margin-bottom:20px}
+h2{font-size:23px;margin:0 0 15px} pre{white-space:pre-wrap;overflow-wrap:anywhere;font:18px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;margin:0}
+footer{font-size:17px;line-height:1.5;color:#555;display:flex;justify-content:space-between;border-top:1px solid #cecdc7;padding-top:16px;margin-top:4px}
+</style><main><header><h1><span class="mark">?</span>clueless</h1><div class="meta">Published signup example<br>Illustrative output · not a live session</div></header><blockquote>I&#x27;m not a programmer. I need a signup form for my small online course site (Node/Express backend, plain HTML front). Email + password, stores users, that&#x27;s it. I don&#x27;t understand any of this, just make it properly for me, I&#x27;ll copy-paste whatever you give.</blockquote><div class="grid"><div><section><h2>Run it</h2><pre>  npm install
+  SESSION_SECRET=$(node -e &quot;console.log(require(&#x27;crypto&#x27;).randomBytes(32).toString(&#x27;hex&#x27;))&quot;) npm start</pre></section><section><h2>Careful</h2><pre>  - users.db is real user data. Back it up before deploying. Never commit it.
+  - No password reset yet. For a course site that is your #1 support ticket.
+  - No HTTPS here. Any normal host gives you HTTPS; don&#x27;t serve signups over http://.</pre></section></div><div><section><h2>Check it worked</h2><pre>  Sign up twice with the same email. The second must say &quot;already exists&quot;.</pre></section><section><h2>Decided for you</h2><pre>  - SQLite over Postgres: one file, zero setup, fine for a small course site.
+  - Cookie sessions over JWT: simpler with a plain HTML front end.
+  - Login included though you asked for signup only: a signup with no way
+    back in isn&#x27;t useful.</pre></section><section><h2>Only you can decide</h2><pre>  - Where this runs permanently (assumed Render/Railway).
+  - Email verification before course access (assumed no, for now).
+  - What happens right after signup (assumed: success message).</pre></section></div></div><footer><span>Excerpt from examples/signup-form.md</span><span>ADanMan/clueless · MIT</span></footer></main></html>
