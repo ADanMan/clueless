@@ -31,6 +31,9 @@
     "privacyPolicyURL": "https://github.com/ADanMan/clueless/blob/main/SECURITY.md",
     "termsOfServiceURL": "https://github.com/ADanMan/clueless/blob/main/LICENSE",
     "composerIcon": "./assets/icon.svg",
+    "screenshots": [
+      "./assets/screenshots/signup-example.png"
+    ],
     "defaultPrompt": [
       "I know nothing about this, set it up properly for me",
       "What am I not seeing in this plan?"
